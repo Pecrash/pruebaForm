@@ -18,11 +18,9 @@
 			<script>
 				function sendemail() {
 					Email.send({
-						Host: "smtp.elasticemail.com",
-						Username: "pecrash12@gmail.com",
-						Password: "3CFEA0507FDCC6DC632E7894E1B73CA28FFB",
+						SecureToken: "05af9156-4cde-4006-b516-9c96a6d65c7e",
 						To: "pecrash12@gmail.com",
-						From: "jvaguitar@gmail.com",
+						From: "pecrash12@gmail.com",
 						Subject: "This is the subject",
 						Body: "And this is the body",
 					}).then((message) => alert(message));
