@@ -12,18 +12,20 @@
 
 			<input placeholder="number" type="text" />
 			<input placeholder="texto" type="text" />
-			<input placeholder="email" type="email" />
+			<input placeholder="email" type="text" />
 			<input type="submit" />
 
 			<script>
 				function sendemail() {
 					Email.send({
-						SecureToken: "05af9156-4cde-4006-b516-9c96a6d65c7e",
+						SecureToken: "76743916-b233-47ec-8985-79c4564df0ab",
 						To: "pecrash12@gmail.com",
 						From: "pecrash12@gmail.com",
 						Subject: "This is the subject",
 						Body: "And this is the body",
 					}).then((message) => alert(message));
+
+                    console.log('nuevo')
 				}
 			</script>
 		</form>
